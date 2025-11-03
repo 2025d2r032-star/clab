@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define PI 3.1416
+
+int main() {
+    float r, a, l, w;
+
+    // Circle
+    printf("Enter radius of circle: ");
+    scanf("%f", &r);
+    printf("Circle -> Area = %.2f, Perimeter = %.2f\n", PI*r*r, 2*PI*r);
+
+    // Square
+    printf("Enter side of square: ");
+    scanf("%f", &a);
+    printf("Square -> Area = %.2f, Perimeter = %.2f\n", a*a, 4*a);
+
+    // Rectangle
+    printf("Enter length and width of rectangle: ");
+    scanf("%f %f", &l, &w);
+    printf("Rectangle -> Area = %.2f, Perimeter = %.2f\n", l*w, 2*(l+w));
+
+    return 0;
+}
